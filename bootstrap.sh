@@ -4,7 +4,7 @@ apt-get update
 apt-get install -y r-base jupyter-notebook curl libssl-dev libcurl4-openssl-dev net-tools
 ln -s /usr/bin/jupyter-notebook /usr/bin/jupyter
 R -e "install.packages(c('repr','IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'), repos='https://cran.rstudio.com/')"
-R -e "install.packages(c('ggplot','reshape2','entropy'), repos='https://cran.rstudio.com/')"
+R -e "install.packages(c('ggplot','reshape2','entropy','quantmod'), repos='https://cran.rstudio.com/')"
 R -e "devtools::install_github('IRkernel/IRkernel')"
 R -e "IRkernel::installspec(user = FALSE)"
 
