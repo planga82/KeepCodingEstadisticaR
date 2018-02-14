@@ -6,7 +6,7 @@ pip install --upgrade pip
 pip install jupyter
 
 R -e "install.packages(c('repr','IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'), repos='https://cran.rstudio.com/')"
-R -e "install.packages(c('ggplot','reshape2','entropy','quantmod'), repos='https://cran.rstudio.com/')"
+R -e "install.packages(c('ggplot2','reshape2','entropy','quantmod'), repos='https://cran.rstudio.com/')"
 R -e "devtools::install_github('IRkernel/IRkernel')"
 R -e "IRkernel::installspec(user = FALSE)"
 
